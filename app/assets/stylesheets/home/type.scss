@@ -1,0 +1,107 @@
+
+
+// gotham light
+  .gotham_light{
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-weight:100;
+  }
+  // gotham book
+  .gotham_book{
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-weight:400;
+  }
+  // gotham bold
+  .gotham_bold{
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-weight:700;
+  }
+
+  .text_blue{
+    color: $text-blue;
+  }
+
+  // body copy large text
+  h1 {
+    @extend .gotham_light;
+    color: $text-blue;
+    font-size: 25px;
+    line-height: 28px;
+  }
+  // module section header
+  h3 {
+    @extend .gotham_light;
+    color: $text-blue;
+    font-size: 20px;
+  }
+  // red button text, paragraph bold
+  h4 {
+    @extend .gotham_bold;
+    color: $text-grey;
+    font-size: 13px;
+  }
+  .button{
+    @extend .gotham_bold;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  p, li{
+    @extend .gotham_book;
+    color: $text-grey;
+    font-size: 15px;
+  }
+  a{
+    @extend .gotham_book;
+    color: $text-blue;
+    font-size: 15px;
+    &:hover{
+      color: $text-grey;
+    }
+  }
+  .pledge-box{
+    .header{
+      @extend .gotham_bold;
+      font-size: 30px;
+      color: $text-grey;
+    }
+  }
+
+
+  // Large screens
+/* min-width 1025px, large screens */
+@media #{$large-up}{
+  h1{
+    font-size: 36px;
+    line-height: 42px;
+  }
+  h3{
+    font-size: 24px;
+  }
+  h4, .button{
+    font-size: 16px;
+  }
+  p, a, li{
+    font-size: 16px;
+  }
+  .pledge-box{
+    .header{
+      font-size: 36px;
+    }
+  }
+} // Large screen end
+
+// Medium screens
+/* min-width 641px and max-width 1024px */
+@media #{$medium-up}{
+  p, a, li{
+    font-size: 16px;
+  }
+  h4, .button{
+    font-size: 16px;
+  }
+} // Medium screen end
+
+
+
+
+
+

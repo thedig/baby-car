@@ -1,0 +1,224 @@
+
+
+html, html a {
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+.main-home{
+  @import 'home/variables';
+  @import 'home/type';
+
+  background-color: $white-bg;
+
+  .blue-bg{
+    background-color: $blue-bg;
+  }
+  .grey-light-bg{
+    background-color: $grey-light-bg;
+  }
+  .grey-bg{
+    background-color: $grey-bg;
+  }
+  .white-bg{
+    background-color: $white-bg;
+  }
+
+  .button{
+    -webkit-transition: 0; /* For Safari 3.1 to 6.0 */
+    transition: 0;
+    &:hover{
+      background-color: $blue-bg;
+      -webkit-transition: 0; /* For Safari 3.1 to 6.0 */
+      transition: 0;
+    }
+  }
+
+  h3.sub-title {
+    font-weight: 400;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(1turn);
+      -webkit-transform: rotate(1turn);
+    }
+  }
+
+  .ps-progress {
+    position: absolute;
+    top: 135px;
+    left: 115px;
+    display: inline-block;
+    width: 5em;
+    height: 5em;
+    margin: 0 .5em;
+    font-size: 12px;
+    text-indent: 999em;
+    overflow: hidden;
+    animation: spin 1s infinite steps(8);
+    -webkit-animation: spin 1s infinite steps(8);
+  }
+
+  .ps-progress:before,
+  .ps-progress:after,
+  .ps-progress > div:before,
+  .ps-progress > div:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 2.25em; /* (container width - part width)/2  */
+    width: .5em;
+    height: 1.5em;
+    border-radius: .2em;
+    background: #ddd;
+    box-shadow: 0 3.5em #ddd; /* container height - part height */
+    transform-origin: 50% 2.5em; /* container height / 2 */
+    -webkit-transform-origin: 50% 2.5em;
+  }
+
+  .ps-progress:before {
+    background: #555;
+  }
+
+  .ps-progress:after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    background: #777;
+  }
+
+  .ps-progress > div:before {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    background: #999;
+  }
+
+  .ps-progress > div:after {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    background: #bbb;
+  }
+
+  .spinner-box {
+    position: absolute;
+    height: 310px;
+    width: 303px;
+    top: 0px;
+    left: 15px;
+    border-radius: rem-calc(10px);
+    z-index: 1000;
+  }
+
+  @import 'home/header_bar';
+  @import 'home/video_mod';
+  @import 'home/sponsor_bar';
+  @import 'home/pledge';
+  @import 'home/tech_spec';
+  @import 'home/who_we_are';
+
+  .trojan-horse {
+    .row {
+      margin: 0;
+      max-width: 100%;
+      img {
+        width: 50%;
+      }
+    }
+  }
+
+  .mobile-accordion {
+    .accordion {
+      .accordion-navigation:nth-child(odd) a{
+        background-color: #fff;
+      }
+
+      .accordion-navigation:nth-child(even) {
+        a {
+          background-color: $grey-light-bg;
+        }
+        a:hover {
+          background-color: $grey-light-bg;
+        }
+      }
+      .accordion-navigation.white-accordion-bar a{
+        background-color: white;
+      }
+
+      .accordion-navigation.gray-accordion-bar a{
+        background-color: $grey-light-bg;
+      }
+
+      .accordion-navigation.dark-accordion-bar a{
+        color: $text-blue;
+        background-color: $grey-bg;
+      }
+    }
+  }
+    .accordion{
+      .content{
+        padding: 0;
+      }
+      .accordion-navigation {
+        a{
+          @extend .gothem_book;
+          color: $text-grey;
+        }
+        .content{
+          a{
+            color: $text-blue;
+            &:hover{
+              color: $text-grey;
+            }
+          }
+        }
+        .dark-gray-container {
+          background-color: #45494b;
+        }
+        .gray-container {
+          background-color: #f3f3f3;
+        }
+      }
+
+      .arrow-open, .arrow-close{
+        position: relative;
+        float: right;
+        margin-right: rem-calc(10px);
+        // display: none;
+      }
+      .arrow-open{
+        display: block;
+      }
+      .arrow-close {
+        display:none;
+      }
+      .active .arrow-open{
+        display:none;
+      }
+      .active .arrow-close{
+        display: block;
+      }
+    }
+
+
+  .hide-for-small-only {
+    h3{
+      margin-bottom: rem-calc(24px);
+    }
+  }
+
+  // Large screens
+  /* min-width 1025px, large screens */
+  @media #{$large-up}{
+    .button{
+      padding-top: 1rem;
+      padding-right: 2rem;
+      padding-bottom: 1.0625rem;
+      padding-left: 2rem;
+    }
+  } // Large screen end
+
+}
+
+.ig-widget {
+  display: none;
+}

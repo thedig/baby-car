@@ -1,0 +1,31 @@
+.background-robot-tile {
+  h1, h2, h3, h4, p {
+    color: white;
+  }
+}
+
+.emphasize {
+  font-style: italic;
+}
+
+.padded-page {
+  padding-top: rem-calc(36px);
+}
+
+.padded-row {
+  padding-top: rem-calc(48px);
+}
+
+.prismic-preview {
+  color: white;
+  h1, h2, label, p {
+    color: white;
+  }
+}
+
+// used on thank you and main headline
+@media #{$medium-up}{
+  .padded-page.padded-for-small-only{
+    padding-top: 0;
+  }
+}

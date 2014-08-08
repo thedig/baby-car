@@ -1,0 +1,80 @@
+.pledge-main{
+    padding-top: rem-calc(30px);
+    padding-bottom: rem-calc(10px);
+    background-color: $grey-bg;
+    .pledge-top-row {
+      // padding-top: 90px;
+    }
+    .pledge-box{
+      // height: 260px;
+      // width: 100%;
+      background-color: #fff;
+      border-radius: rem-calc(10px);
+      // margin: 5px;
+      margin-bottom: rem-calc(20px);
+      padding: rem-calc(20px);
+      h3{
+        margin-bottom: 0;
+      }
+      h4{
+        margin-top: 0;
+      }
+      p{
+        margin-bottom: 0;
+      }
+      p.tshirt-text {
+        padding-bottom: 10px;
+      }
+      .perk-amount{
+        font-weight: 500;
+      }
+      .pledge-button-wrapper{
+        position: absolute;
+        top: 175px;
+        left: 0px;
+        width: 100%;
+        text-align: center;
+        .button{
+          margin-top: 15px;
+          margin-bottom: 5px;
+          background-color: $button-red;
+        }
+        .disabled{
+          background-color: $grey-bg !important;
+        }
+        .backers{
+          margin-top: 10px;
+        }
+      }
+    }
+    .pledge-overlay {
+      display: none;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      // left: 0;
+      vertical-align: middle;
+      background-color: $button-red;
+      color: #fff;
+      &:hover{
+        display: block;
+      }
+    }
+
+    // Large screens
+    /* min-width 1025px, large screens */
+    @media #{$large-up}{
+      .pledge-box{
+        height: 310px;
+      }
+    } // Large screen end
+
+    // Medium screens
+    /* min-width 641px and max-width 1024px */
+    @media #{$medium-up}{
+      .pledge-box{
+        height: 310px;
+      }
+    } // Medium screen end
+
+  }

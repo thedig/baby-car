@@ -1,0 +1,31 @@
+.tech-specs{
+  padding-bottom: $large-mobile-spacing;
+  p{
+    margin-bottom: rem-calc(10px);
+  }
+  .baby-schem{
+    margin-top: 10px;
+    padding-bottom: rem-calc(20px);
+  }
+
+  .specifics-list {
+    padding-top: rem-calc(20px);
+  }
+
+  @media #{$medium-only}{
+    .specs-text {
+      padding-top: rem-calc(50px);
+    }
+  }
+
+  @media #{$medium-up}{
+    padding-top: $large-desktop-spacing;
+    padding-bottom: $large-desktop-spacing;
+    .specifics-list {
+      p {
+        font-size: rem-calc(14px);
+      }
+    }
+  }
+
+  }

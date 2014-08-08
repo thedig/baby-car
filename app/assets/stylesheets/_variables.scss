@@ -1,0 +1,31 @@
+
+$text-blue: #00D8FF;
+
+// widths for slider - small
+
+$robot-show-box-width: 370px;
+$sliding-box-width: $robot-show-box-width * 11;
+
+$caption-title-height: rem-calc(60px);
+$caption-year-height: rem-calc(50px);
+
+
+$robot-img-height: rem-calc(360px);
+$timeline-big-header-height: rem-calc(265px);
+
+
+$caption-text-height-smallest: rem-calc(320px);
+$robot-img-height-smallest: rem-calc(285px);
+$robot-caption-height-smallest: $caption-title-height + $caption-year-height + $caption-text-height-smallest;
+$smallest-slider-height: $robot-img-height-smallest + $robot-caption-height-smallest;
+
+$caption-text-height-midsmall: rem-calc(250px);
+$robot-img-height-midsmall: rem-calc(345px);
+$robot-caption-height-midsmall: $caption-title-height + $caption-year-height + $caption-text-height-midsmall;
+$midsmall-slider-height: $robot-img-height-midsmall + $robot-caption-height-midsmall;
+
+
+$caption-text-height-largesmall: rem-calc(220px);
+$robot-img-height-largesmall: rem-calc(360px);
+$robot-caption-height-largesmall: $caption-title-height + $caption-year-height + $caption-text-height-largesmall;
+$largesmall-slider-height: $robot-img-height-largesmall + $robot-caption-height-largesmall;
