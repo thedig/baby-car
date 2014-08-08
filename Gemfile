@@ -5,7 +5,7 @@ gem 'rails', '4.0.0'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+# gem 'sqlite3'
 
 gem 'haml'
 gem 'foundation-rails', :git => 'git://github.com/jkatsnelson/foundation-rails.git'
@@ -35,6 +35,11 @@ group :development do
   gem 'guard-livereload', :require => false
   gem 'guard-rspec', '~> 2.1.0', :require => false
   gem 'rack-livereload'
+end
+
+group :production do
+  gem 'pg', '0.15.1'
+  gem 'rails_12factor', '0.0.2'
 end
 
 # To use ActiveModel has_secure_password
