@@ -17,7 +17,7 @@ group :assets do
   gem 'sass-rails', '~> 4.0.0'
   # gem 'compass-rails'
   gem 'coffee-rails'
-  gem 'rails-assets-underscore'
+  # gem 'rails-assets-underscore'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
